@@ -40,23 +40,23 @@ Only specific emails can access the **Add Property** page:
 git clone https://github.com/your-username/real-estate-brokerage-app.git
 
 # 2. Backend Setup
-backend/routes/propertyRoutes.js
+backend/routes/propertyRoutes.js --> 
 replace the "def@gmail.com" & "abc@gmail.com" with the emails of the admin. you can also add more emails to make more number of admins.
 
-backend/.env
+backend/.env --> 
 fill the required fields given there.
 
-cd backend
-npm install
+cd backend -->
+npm install -->
 npm start
 
 # 3. Frontend Setup
-frontend/src/components/Navbar.jsx
-replace the emails here with the admin emails. Such that only admins can access the section of adding property.
-const adminEmails = ["abc@gmail.com", "def@gmail.com"];
+frontend/src/components/Navbar.jsx --> 
+replace the emails here with the admin emails. Such that only admins can access the section of adding property. (
+const adminEmails = ["abc@gmail.com", "def@gmail.com"]; )
 
-cd frontend
-npm install
+cd frontend -->
+npm install -->
 npm run dev
 
 # 4. Also install the required dependencies like bcrypt etc.....
