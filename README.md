@@ -37,7 +37,7 @@ Only specific emails can access the **Add Property** page:
 ## ⚙️ Setup Instructions (Local Development)
 
 # 1. Clone the repo
-git clone https://github.com/your-username/real-estate-brokerage-app.git
+git clone https://github.com/pramoddeokar11/Real-Estate-Brokerage-Web-App
 
 # 2. Backend Setup
 backend/routes/propertyRoutes.js --> 
