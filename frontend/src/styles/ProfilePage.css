@@ -1,0 +1,104 @@
+/* Profile Page Styling */
+.profile-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #22293d;
+  background-color: #E6F0FF;
+  overflow: hidden; /* Prevent scroll issues */
+  margin-top: -20px;
+}
+
+.profile-content {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 100px; /* Adjust top position */
+  padding: 0 15px; /* Ensure padding is added on mobile */
+}
+
+/* Profile Card Styling */
+.profile-card {
+  width: 100%;
+  max-width: 400px; /* Max width for mobile */
+  background-color: #DCEAFE !important;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid #fbc02d;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px; /* Add some space at the bottom */
+}
+
+/* Title */
+h2 {
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+/* Profile details */
+p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Loading and Error Messages */
+.profile-loading,
+.profile-error {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Profile Image Container */
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Profile Image Styling */
+.profile-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fbc02d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+/* Profile Image Hover Effect */
+.profile-image:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-content {
+    margin-top: 60px; /* Adjust top margin for mobile */
+    padding: 0 20px; /* Add more padding for mobile screens */
+  }
+
+  .profile-card {
+    width: 100%; /* Make the card width 100% */
+    padding: 15px; /* Reduce padding for mobile */
+    margin-bottom: 20px; /* Reduce the bottom margin */
+  }
+
+  .profile-image {
+    width: 120px; /* Make image smaller on mobile */
+    height: 120px; /* Make image smaller on mobile */
+  }
+
+  p {
+    font-size: 1rem; /* Reduce font size for mobile */
+  }
+
+  h2 {
+    font-size: 1.8rem; /* Adjust title size on mobile */
+  }
+}

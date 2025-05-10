@@ -1,0 +1,127 @@
+/* Main Container Layout */
+.property-details-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #E6F0FF;
+  color: black;
+  padding: 40px;
+  width: calc(100% - 130px); /* Adjust for desktop width */
+  margin-left: 130px; /* Adjust for desktop layout */
+  height: 100vh;
+  box-sizing: border-box;
+  margin-top: -20px;
+}
+
+/* Left Section - Property Image */
+.property-image img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid #fbc02d;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+/* Middle Section - Property Info */
+.property-info {
+  flex: 1;
+  margin-left: 40px;
+}
+
+.property-info h2 {
+  font-size: 2.5rem;
+  color: #fbc02d;
+  margin-bottom: 20px;
+  margin-top: 150px;
+}
+
+.property-info p {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: black;
+}
+
+/* Right Section - Contact Info */
+.contact-details {
+  width: 350px;
+  background-color: #DCEAFE;
+  padding: 30px;
+  border-radius: 12px;
+  border: 2px solid #fbc02d;
+  text-align: left;
+  margin-top: 120px;
+  margin-right: 100px;
+}
+
+.contact-details h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fbc02d;
+}
+
+.contact-field {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.contact-field strong {
+  color: rgb(48, 48, 48);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Main Container Layout */
+  .property-details-container {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 20px;
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%; /* Ensure full width on mobile */
+  }
+
+  /* Property Image */
+  .property-image img {
+    width: 100%; /* Ensure image takes full width */
+    height: auto;
+    max-height: 250px;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  /* Property Info */
+  .property-info {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .property-info h2 {
+    font-size: 2rem; /* Adjust title size for mobile */
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+
+  .property-info p {
+    font-size: 1.1rem; /* Adjust font size for readability */
+    margin-left: 50px;
+  }
+
+  /* Contact Info */
+  .contact-details {
+    width: 100%; /* Make contact details full width on mobile */
+    margin-top: 20px;
+    margin-right: 0;
+    padding: 20px;
+  }
+
+  .contact-details h3 {
+    font-size: 1.8rem; /* Adjust title size for mobile */
+  }
+
+  .contact-field {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+}

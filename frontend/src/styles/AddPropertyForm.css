@@ -1,0 +1,107 @@
+/* AddPropertyForm.css */
+
+.add-property-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('../assets/states.png') no-repeat center center/cover;
+  background-color: #E6F0FF;
+  margin-left: 0; /* Adjusted for mobile */
+  margin-top: -20px;  /* Adjusted for mobile */
+  padding: 20px;  /* Added padding for better spacing */
+}
+
+.add-property-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3498db;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.23);
+  padding: 20px;
+  width: 100%; /* 100% width for mobile */
+  max-width: 500px; /* Max width for better readability */
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #DCEAFE;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.23);
+  transition: all 0.3s ease;
+  margin-top: 18px;
+  cursor: pointer;
+  border: 1px solid #00bcd4;
+}
+
+input::placeholder {
+  color: rgb(52, 50, 50);
+}
+
+input[type="file"] {
+  border: none;
+  width: 100%; /* Adjust width for mobile */
+  background-color: rgba(255, 255, 255, 0.23);
+  margin-top: 20px;
+}
+
+button {
+  position: relative;
+  margin-top: 20px;
+  background: #00bcd4;
+  color: white;
+  padding: 12px;
+  font-size: 1.0rem;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  width: 100%; /* Full width on mobile */
+}
+
+button:hover {
+  background: #0097a7;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .add-property-container {
+    margin-left: 0;
+    margin-top: 0;
+    padding: 10px; /* Reduced padding for mobile */
+  }
+
+  .add-property-title {
+    font-size: 1.8rem; /* Adjust title size for smaller screens */
+    margin-bottom: 1.5rem;
+  }
+
+  form {
+    padding: 15px; /* Adjust padding for smaller screens */
+    width: 100%;
+    max-width: 400px; /* Max width for mobile */
+  }
+
+  input {
+    padding: 12px; /* Adjust input padding */
+    font-size: 0.9rem; /* Slightly smaller font for inputs */
+  }
+
+  button {
+    padding: 12px;
+    font-size: 1rem; /* Adjust font size for button */
+    width: 100%; /* Ensure button fits the width on mobile */
+  }
+}

@@ -1,0 +1,124 @@
+/* styles/Dashboard.css */
+
+:root {
+  --primary-color: #00bcd4;
+  --hover-color: #0097a7;
+  --input-border: #ccc;
+  --input-focus: #00bcd4;
+  --box-shadow: rgba(0, 0, 0, 0.2);
+  --background-color: #22293d;
+  --background-color: #E6F0FF;
+  --text-color: #ffffff;
+  --highlight-color: #fbc02d;
+}
+
+/* Dashboard Container - Consistent Design */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px;
+  margin-left: 130px; /* Adjust for Sidebar */
+  width: calc(100% - 130px);
+  background-color: var(--background-color);
+  color: black;
+  min-height: 100vh;
+  margin-top: -20px;
+}
+
+/* Dashboard Title */
+.dashboard-container h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3498db;
+  margin-bottom: 2rem;
+}
+
+/* Property List Section */
+.property-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-container {
+    margin-left: 0;
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .dashboard-container h2 {
+    text-align: center;
+    font-size: 2rem; /* Optional: Adjust size if needed for mobile */
+    margin-bottom: 1.5rem; /* Optional: Adjust spacing if needed */
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    gap: 16px;
+  }
+
+  .filter-group {
+    width: 100%;
+  }
+
+  .filter-group input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+
+
+/* Filters Section */
+.filters {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #2d3450;
+  background-color: #DCEAFE;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--box-shadow);
+  width: 800px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.filter-group label {
+  font-size: 0.9rem;
+  color: var(--highlight-color);
+  margin-bottom: 6px;
+}
+
+.filter-group input {
+  padding: 10px;
+  border: 1px solid var(--input-border);
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  width: 200px;
+  background-color: var(--background-color);
+  color: black;
+}
+
+.filter-group input:focus {
+  border-color: var(--input-focus);
+  box-shadow: 0 0 5px var(--hover-color);
+}
